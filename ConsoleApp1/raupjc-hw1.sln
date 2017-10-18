@@ -5,16 +5,30 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raupjc-hw1", "ConsoleApp1\raupjc-hw1.csproj", "{0CA10218-0CF8-4545-A239-F1040BE8B5F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monogame-project", "monogame-project\monogame-project.csproj", "{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Debug|x86.Build.0 = Debug|Any CPU
 		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Release|x86.ActiveCfg = Release|Any CPU
+		{0CA10218-0CF8-4545-A239-F1040BE8B5F5}.Release|x86.Build.0 = Release|Any CPU
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Debug|x86.ActiveCfg = Debug|x86
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Debug|x86.Build.0 = Debug|x86
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Release|Any CPU.ActiveCfg = Release|x86
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Release|x86.ActiveCfg = Release|x86
+		{9ABE60DD-4DDB-4252-B5A1-A3B77BD55F55}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

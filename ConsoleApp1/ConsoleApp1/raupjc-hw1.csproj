@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demo.cs" />
     <Compile Include="GenericList.cs" />
     <Compile Include="GenericListEnumerator.cs" />
     <Compile Include="IGenericList.cs" />
     <Compile Include="IntegerList.cs" />
     <Compile Include="IIntegerList.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
