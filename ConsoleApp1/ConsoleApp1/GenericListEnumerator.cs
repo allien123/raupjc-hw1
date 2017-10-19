@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
 
-namespace ConsoleApp1
+namespace bLA
 {
     public class GenericListEnumerator<X> : IEnumerator<X>
     {

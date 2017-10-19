@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public interface IGenericList<X> : IEnumerable<X>
+    public interface IGenericList<X>
     {
         void Add(X item);
         bool Remove(X item);

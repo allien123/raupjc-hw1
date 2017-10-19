@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class GenericList<X> : IGenericList<X>
+    public class GenericList<X> : IGenericList<X>, IEnumerable
     {
         private X[] _internalStorage;
         public int Count { get; private set; }
@@ -46,6 +46,7 @@ namespace ConsoleApp1
         public void Clear()
         {
             Count = 0;
+            _internalStorage = new X[4];
         }
 
         public bool Contains(X item)
@@ -65,7 +66,7 @@ namespace ConsoleApp1
 
         public int IndexOf(X item)
         {
-            for (int i = 0; i < _internalStorage.Length; i++)
+            for (int i = 0; i < Count; i++)
             {
                 if (_internalStorage[i].Equals(item))
                 {
@@ -105,6 +106,45 @@ namespace ConsoleApp1
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+    }
+
+    public class GenericListEnumerator<X> : IEnumerator<X>
+    {
+        private GenericList<X> genericList;
+        private int _currentIndex;
+
+        public GenericListEnumerator(GenericList<X> genericList)
+        {
+            this.genericList = genericList;
+        }
+
+        public void Dispose()
+        {
+            Current = default(X);
+        }
+
+        public bool MoveNext()
+        {
+            if (_currentIndex < genericList.Count)
+            {
+                Current = genericList.GetElement(_currentIndex);
+                _currentIndex++;
+                return true;
+            };
+            return false;
+        }
+
+        public void Reset()
+        {
+            _currentIndex = 0;
+        }
+
+        public X Current { get; private set; }
+
+        object IEnumerator.Current
+        {
+            get { return Current; }
         }
     }
 }
