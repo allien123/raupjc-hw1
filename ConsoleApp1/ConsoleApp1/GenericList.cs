@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class GenericList<X> : IGenericList<X>
+    public class GenericList<X> : IGenericList<X>
     {
         private X[] _internalStorage;
         public int Count { get; private set; }

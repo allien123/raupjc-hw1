@@ -4,7 +4,7 @@ using System.Runtime.Remoting.Messaging;
 
 namespace ConsoleApp1
 {
-    internal class GenericListEnumerator<X> : IEnumerator<X>
+    public class GenericListEnumerator<X> : IEnumerator<X>
     {
         private GenericList<X> genericList;
         private int _currentIndex;
