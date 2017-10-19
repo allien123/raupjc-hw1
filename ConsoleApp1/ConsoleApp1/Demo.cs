@@ -41,7 +41,7 @@ namespace ConsoleApp1
             listOfIntegers.Remove(5);
             Console.WriteLine(listOfIntegers.Count );
             Console.WriteLine(listOfIntegers.Remove (100) );
-            Console.WriteLine(listOfIntegers.RemoveAt (1) );
+            Console.WriteLine(listOfIntegers.RemoveAt(1) );
             listOfIntegers.Clear();
             Console.WriteLine(listOfIntegers.Count );
         }

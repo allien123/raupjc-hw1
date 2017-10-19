@@ -45,6 +45,7 @@ namespace ConsoleApp1
         public void Clear()
         {
             Count = 0;
+            _internalStorage = new int[4];
         }
 
         public bool Contains(int item)
@@ -64,7 +65,7 @@ namespace ConsoleApp1
 
         public int IndexOf(int item)
         {
-            for (int i = 0; i < _internalStorage.Length; i++)
+            for (int i = 0; i < Count; i++)
             {
                 if (_internalStorage[i] == item)
                 {
